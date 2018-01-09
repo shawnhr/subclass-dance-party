@@ -4,6 +4,8 @@ body, html{
 body{
   margin: 0px;
   background-color:#444;
+  background: url("images/bg4.gif") center;
+  background-size: cover;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -24,4 +26,17 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+.pikachu{
+  width:200px;
+  height:auto;
+  position:fixed;
+}.fire{
+  width:200px;
+  height:auto;
+  position:fixed;
+}
+img {
+  max-width: 80%;
+  max-height:80%;
 }
