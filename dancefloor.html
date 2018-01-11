@@ -7,18 +7,42 @@
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
     <script src="src/pikachu.js"></script>
+    <script src="src/snoop.js"></script>
+    <script src="src/random.js"></script>
     <script src="src/fire.js"></script>
+    <script src="src/mew.js"></script>
+    <script src="src/remove.js"></script>
+
+    <audio controls>
+      <source src="song.mp3" type="audio/mpeg">
+    </audio>
   </head>
-  <audio controls>
-    <source src="song.mp3" type="audio/mpeg">
-  </audio>
   <body>
+    <!-- <div id="background"></div> -->
     <div class="topbar">
-      <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeCuteDancer">add a cute dancer</a>    </div>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeFireDancer">add a fire dancer</a>    </div>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
+      <span class="title">Pokemon Dance Party</span>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeCuteDancer">Pikachu</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeFireDancer">Charmander</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">Bulbasaur</a>
+
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeRapDancer">Squirtle</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeMewDancer">Mew</a>
+     
+
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeRandomDancer">Random</a>
+
+
+      <a href="#" class="lineUp">Line Up</a>
+      <a href="#" class="resume">Resume</a>
+      <a href="#" class="rand_bg">Background</a>
+      <a href="#" class="heart">Cupid Heart</a>
+      <!-- <a href="#" class="teamUp">Team Up</a> -->
+
+      <a href="#" class="remove">Gotta catch 'em all!</a>
+
+    </div>
+    <div class="dancerContainer"></div>
+
     <script src="src/init.js"></script>
   </body>
 </html>

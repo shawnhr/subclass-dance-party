@@ -13,6 +13,6 @@ var makeFireDancer = function(top, left, timeBetweenSteps) {
 
   makeFireDancer.prototype.step = function() {
     makeDancer.prototype.step.call(this);
-    this.$node.toggle('jump');
+    //this.$node.toggle('slow');
 
   };
