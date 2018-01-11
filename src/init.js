@@ -68,6 +68,7 @@ $('.lineUp').on('click', function() {
  //$("body").css({'background': 'url(images/' + images[Math.floor(Math.random() * images.length)] + ')' +' center'});
  $("body").css({'background': 'url(images/' +'bg'+ Math.floor(Math.random() * 38) + '.gif'+')' +' center'});
  $("body").css({'background-size': 'cover'});
+ // $("body").css({'background-repeat': 'no-repeat'});
  })
 
   let rotate = {};
@@ -115,27 +116,40 @@ $('.lineUp').on('click', function() {
   });
 
    $('.heart').on('click', function() {
-    for(let dancer1 of window.dancers){
-       var x1 = dancer1.$node.position().top;
-       var y1 = dancer1.$node.position().left;
-       for(let dancer2 of window.dancers){
-       var x2 = dancer2.$node.position().top;
-       var y2 = dancer2.$node.position().left;
-       }
-      var distance = Math.sqrt((x2 - x1)^2 + (y2 - y1)^2);
-      console.log(distance, '<-- distance');
-      if (distance < 20) {
-        //rotate();
-        //dancer.$node.toggle();
-        //console.log(dancer.$node.css("left"),"<--left")
-        //this.$node.removeClass("slide");
-        //this.setPosition(dancer.top, dancer.left);
-        dancer1.$node.addClass('heart')
-        dancer2.$node.addClass('heart')
-
-      }
-    }
-  });
+    
+    window.dancers.forEach(function(firstDancer, index1) {
+      var x1 = firstDancer.$node.position().top;
+      var y1 = firstDancer.$node.position().left;
+      window.dancers.forEach(function(secondDancer, index2) {
+        if (index1 !== index2) {
+          var x2 = secondDancer.$node.position().top;
+          var y2 = secondDancer.$node.position().left;
+          var distance = Math.sqrt((x2 - x1)^2 + (y2 - y1)^2);
+          if (distance < 20) {
+            console.log(distance, '<-- distance');
+            secondDancer.$node.css({'background': 'url(images/' +'heart'+ Math.floor(Math.random() * 2) + '.gif'+')'+'center'});
+            secondDancer.$node.css({'width':'100px'});
+            secondDancer.$node.css({'background-size':'contain'});
+            secondDancer.$node.css({'background-repeat':'no-repeat'});
+          }
+        }
+      })
+    })
+  })
+    //   console.log(distance, '<-- distance');
+    //   if (distance < 20) {
+    //     //rotate();
+    //     //dancer.$node.toggle();
+    //     //console.log(dancer.$node.css("left"),"<--left")
+    //     //this.$node.removeClass("slide");
+    //     //this.setPosition(dancer.top, dancer.left);
+    //     //dancer1.$node.addClass('heart')
+    //     //dancer2.$node.addClass('heart')
+    //   $(this).css({'background': 'url(images/' +'heart'+ Math.floor(Math.random() * 2) + '.gif'+')'});
+    //     }
+    //   }
+    // }
+  
 
 
 
@@ -160,9 +174,9 @@ $('.lineUp').on('click', function() {
 
    //    }
    //  })
-   // })
+ })
 
 
 
-});
+
 

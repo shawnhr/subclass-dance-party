@@ -5,7 +5,8 @@ body{
   margin: 0px;
   background-color:#444;
   background: url("images/bg10.gif") center ;
-  
+  /*background-size: contain;*/
+  background-repeat: no-repeat;
   background-size: cover;
   font-size: 18px;
 }
@@ -45,7 +46,7 @@ body, a:link, a:visited, a:active{
   position:absolute;
   /*transition: all 2s ease;*/
   background-size: contain;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   /*animation-name: move2;*/
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -65,7 +66,7 @@ body, a:link, a:visited, a:active{
   height:auto;
   position:absolute;
    background-size: contain;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   /*transition: all 2s ease;*/
     animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -76,7 +77,7 @@ body, a:link, a:visited, a:active{
   height:auto;
   position:absolute;
    background-size: contain;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   /*transition: all 2s ease;*/
     animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -88,7 +89,7 @@ body, a:link, a:visited, a:active{
   height:440px;
   position:absolute;
    background-size: contain;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
     animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
@@ -98,7 +99,7 @@ body, a:link, a:visited, a:active{
   height:440px;
   position:absolute;
    background-size: contain;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
     animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
@@ -108,22 +109,24 @@ body, a:link, a:visited, a:active{
   height:300px;
   position:absolute;
   background-size: contain;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
-.heart {
+/*.heart {
   border:none;
   width:300px;
   height: 100px;
 
   background-size: 100% 100%;
-  background-image: url('https://media.giphy.com/media/uixAvLDHhaLvy/giphy.gif');
+  background-image: url('http://pngimg.com/uploads/apple_logo/apple_logo_PNG19680.png');
   background-size: contain;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
-}
+    animation:popup 3s infinite;
+
+}*/
 .random:hover{
      /* -webkit-animation: swing 1s ease;
         animation: swing 1s ease;
